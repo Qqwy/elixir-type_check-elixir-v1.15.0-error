@@ -1,21 +1,5 @@
 # TypeCheckCompileError
 
-**TODO: Add description**
+This repo is a minimal example that reproduces the error of the issue [elixir-lang/elixir#12726](https://github.com/elixir-lang/elixir/issues/12726).
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `type_check_compile_error` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:type_check_compile_error, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/type_check_compile_error>.
-
+`mix compile` works on Elixir versions < 1.15.0, but breaks on Elixir v1.15.0

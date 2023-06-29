@@ -2,11 +2,10 @@ defmodule Main do
   import Macros
 
   if_recompiling? do
+    IO.puts "Second time compiling"
     use Main
-  end
-
-  def hello do
-    "world"
+  else
+    IO.puts "First time compiling"
   end
 
   defmacro __using__(_options) do
